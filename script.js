@@ -26,7 +26,9 @@ const underPercentage = {
 const matchesPayout = 8; // Adjust this to your desired MATCHES payout
 const differsPayout = 0.05; // Adjust this to your desired DIFFERS payout
 
-const socket = io("http://localhost:3000");
+const socket = io(
+  "http://lotterygame-e2aa47720b09.herokuapp.com:${process.env.APP_PORT}"
+);
 var loggedUser = "null";
 var bitStatus = "none";
 var selectedNumber = 2;
